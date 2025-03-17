@@ -16,40 +16,40 @@ class SubjectsTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('subjects')->delete();
+        // DB::table('subjects')->delete();
 
-        $this->createSubjects();
+        // $this->createSubjects();
     }
 
     protected function createSubjects()
     {
-        $subjects = ['English Language', 'Mathematics'];
-        $sub_slug = ['Eng', 'Math'];
-        $teacher_id = User::where(['user_type' => 'teacher'])->first()->id;
-        $my_classes = MyClass::all();
+        // $subjects = ['English Language', 'Mathematics'];
+        // $sub_slug = ['Eng', 'Math'];
+        // $teacher_id = User::where(['user_type' => 'teacher'])->first()->id;
+        // $my_classes = MyClass::all();
 
-        foreach ($my_classes as $my_class) {
+        // foreach ($my_classes as $my_class) {
 
-            $data = [
+        //     $data = [
 
-                [
-                    'name' => $subjects[0],
-                    'slug' => $sub_slug[0],
-                    'my_class_id' => $my_class->id,
-                    'teacher_id' => $teacher_id
-                ],
+        //         [
+        //             'name' => $subjects[0],
+        //             'slug' => $sub_slug[0],
+        //             'my_class_id' => $my_class->id,
+        //             'teacher_id' => $teacher_id
+        //         ],
 
-                [
-                    'name' => $subjects[1],
-                    'slug' => $sub_slug[1],
-                    'my_class_id' => $my_class->id,
-                    'teacher_id' => $teacher_id
-                ],
+        //         [
+        //             'name' => $subjects[1],
+        //             'slug' => $sub_slug[1],
+        //             'my_class_id' => $my_class->id,
+        //             'teacher_id' => $teacher_id
+        //         ],
 
-            ];
+        //     ];
 
-            DB::table('subjects')->insert($data);
-        }
+        //     DB::table('subjects')->insert($data);
+        // }
 
     }
 

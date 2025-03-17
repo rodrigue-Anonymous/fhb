@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'CJ INSPIRED ACADEMY') }}</title>
+    <title>{{ config('app.name', 'SILITIS TECH') }}</title>
 
     @include('partials.login.inc_top')
 </head>
@@ -15,7 +15,7 @@
 <body>
 @include('partials.login.header')
 @yield('content')
-@include('partials.login.footer')
+@include('partials.login.footer') 
 
 </body>
 

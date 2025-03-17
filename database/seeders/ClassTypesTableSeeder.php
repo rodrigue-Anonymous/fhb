@@ -16,16 +16,25 @@ class ClassTypesTableSeeder extends Seeder
     {
         DB::table('class_types')->delete();
 
+        // $data = [
+        //     ['name' => 'Creche', 'code' => 'C'],
+        //     ['name' => 'Pre Nursery', 'code' => 'PN'],
+        //     ['name' => 'Nursery', 'code' => 'N'],
+        //     ['name' => 'Primary', 'code' => 'P'],
+        //     ['name' => 'Junior Secondary', 'code' => 'J'],
+        //     ['name' => 'Senior Secondary', 'code' => 'S'],
+        // ];
         $data = [
-            ['name' => 'Creche', 'code' => 'C'],
-            ['name' => 'Pre Nursery', 'code' => 'PN'],
-            ['name' => 'Nursery', 'code' => 'N'],
-            ['name' => 'Primary', 'code' => 'P'],
-            ['name' => 'Junior Secondary', 'code' => 'J'],
-            ['name' => 'Senior Secondary', 'code' => 'S'],
+            ['name' => 'Sixième/Cinquième', 'code' => 'C'],
+            ['name' => 'Quatrième', 'code' => 'PN'],
+            ['name' => 'Troisième', 'code' => 'N'],
+            ['name' => 'Seconde', 'code' => 'P'],
+            ['name' => 'Première ', 'code' => 'J'],
+            ['name' => 'Terminal ', 'code' => 'S'],
         ];
 
         DB::table('class_types')->insert($data);
 
     }
 }
+

@@ -1,0 +1,152 @@
+A EDIT COTE SEEDERS 
+
+1 
+//////////////////
+DormitoriesTableSeeder.php
+
+            ['name' => 'Faith Hostel'],
+            ['name' => 'Peace Hostel'],
+            ['name' => 'Grace Hostel'],
+            ['name' => 'Success Hostel'],
+            ['name' => 'Trust Hostel'],
+
+JE VAIS REMPLACER PAR 
+
+INTERNAT FILLES
+INTERNAT GARCONS 
+EXTERNES
+
+
+
+2
+//////////////////////
+ClassTypesTableSeeder.php
+
+les type de classe du genre
+
+1ere année
+2eme année
+3eme année
+4eme année
+5eme année
+6eme année
+
+
+3
+////////////////////////////
+GradesTableSeeder.php
+
+JE DOIS ADPATER LES BAREME EN FOCNTIONS DES NOTATION BENINOIS DE 0 A 20.
+Sacaht que 0  a  20 serai remplacer dans name de (mark_from  a mark_to), pour le name vais y reflechir
+
+
+            ['name' => 'A', 'mark_from' => 70, 'mark_to' => 100, 'remark' => 'Excellent'],
+            ['name' => 'B', 'mark_from' => 60, 'mark_to' => 69, 'remark' => 'Very Good'],
+            ['name' => 'C', 'mark_from' => 50, 'mark_to' => 59, 'remark' => 'Good'],
+            ['name' => 'D', 'mark_from' => 45, 'mark_to' => 49, 'remark' => 'Pass'],
+            ['name' => 'E', 'mark_from' => 40, 'mark_to' => 44, 'remark' => 'Poor'],
+            ['name' => 'F', 'mark_from' => 0, 'mark_to' => 39, 'remark' => 'Fail'],
+
+
+
+
+4
+/////////////////////////////
+
+StatesTableSeeder.php
+
+Les ETAT les 37, son a remplacer dans ce seedrs par nos départements du benin
+de ATLANTIQUE a ZOU
+
+
+Ensuite on devra chercher les villes contenue dans chaque département du benin et dans le prochins seeders les rensegner;
+
+
+5
+///////////////////////////////////////
+LgasTableSeeder.php
+
+C4EST CIC JE RENSEIGNE ELS VILLES ET LEUR LGA 
+
+
+identifiant de leur depâftement ou etat qw
+
+
+
+6
+//////////////////////////////////////////
+
+MyClassesTableSeeder.php
+
+$data = [
+            ['name' => 'Nursery 1', 'class_type_id' => $ct[2]],
+            ['name' => 'Nursery 2', 'class_type_id' => $ct[2]],
+            ['name' => 'Nursery 3', 'class_type_id' => $ct[2]],
+            ['name' => 'Primary 1', 'class_type_id' => $ct[3]],
+            ['name' => 'Primary 2', 'class_type_id' => $ct[3]],
+            ['name' => 'JSS 2', 'class_type_id' => $ct[4]],
+            ['name' => 'JSS 3', 'class_type_id' => $ct[4]],
+            ['name' => 'SSS 1', 'class_type_id' => $ct[5]],
+            ['name' => 'SSS 2', 'class_type_id' => $ct[5]],
+            ['name' => 'SSS 3', 'class_type_id' => $ct[5]],
+            ];
+
+Alors ici c'est les sous classe, un peu comme, 
+
+4amme anné de art plastique
+6eme année de musique
+
+
+et tout
+
+
+
+
+AUTREEEEEEEEE MODIF
+
+
+IMPORTANT
+
+Au niveau tu m'écoutes je dis au niveau de management manager les noix de tour Bien sûr ça affiche un formulairepeut remplir déjà avec les informationsc'est ça le type de sallec'est jaune qui est filière Bon je pense à connaissance pour le moment hein Pareil pour showget qui est voilà la matièreet si je croyais je vois queon a en bas droite type de session pour pouvoir remplir les élémentson a face face ici2ndec'est un des amas 60 secondes affaires et Eiffersa équivus Par contre le système mitigé l'a M first close 2nd plus examallez on déduiten fonction des échelons d'une autre préconçue a à plus a moins B et tout tout voilà notre qui correspond tu vois en tout mais c'est pas ce qui est prévudonc à modifier pointe par la ligneà la lignele système de notation sera modifié Il aura entre les interrogationset tout ce qui va avecet la fonction doit modifier la fonction de calcul algo puisse faire sa somme de l'interview plus du débat renommé au plus le devoir utilisé par 2
+
+
+note a modifier fonction auyssi.
+
+
+
+
+Sur le bulletion HOUSE A modifier
+
+A mettre: soit section ou internat;
+l'entete est a refaire
+
+
+
+
+
+
+
+REMPLACER GRADLE (encore appler COTE) PAR NOM DES PROFESSEUR ET ET AUSSI OU AJOUTER
+ UNE NOUVELLE SECTION POUR LE NOMS ET PRENOMS DES PROFS DES PROFS 
+
+ ET AUSSI ALLEZ CORRIGER LES NOTES POUR QUE ON PUISSE AVOIR DES NOTES A VIRGULES
+ 
+
+ /*****
+
+ refait le DESIGN DES ELEMENT UN PEU COMME COMME TABLEAU DE BORD ET AUSSI
+ 
+
+
+ DEJA IL FAUT QUE JE UTILISE LA FOMRE 
+ ($table->float('t4')->nullable();
+ ) pour pourvoir utiliser des virugule dans les note et aussi, de plus 
+
+
+ /*************
+
+ CORIIGER LA BASE DE DONNE? LES TABLE 
+ MARK 
+
+ POUR METTRE FLOAT 
+ ET AUSSI LES TABLE 

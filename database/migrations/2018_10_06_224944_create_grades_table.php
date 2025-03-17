@@ -17,8 +17,8 @@ class CreateGradesTable extends Migration
             $table->increments('id');
             $table->string('name', 40);
             $table->unsignedInteger('class_type_id')->nullable();
-            $table->tinyInteger('mark_from');
-            $table->tinyInteger('mark_to');
+            $table->float('mark_from');
+            $table->float('mark_to');
             $table->string('remark', 40)->nullable();
             $table->timestamps();
         });

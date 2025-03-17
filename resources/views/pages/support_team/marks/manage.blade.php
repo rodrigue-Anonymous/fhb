@@ -7,7 +7,7 @@
             <h6 class="card-title font-weight-bold">Fill The Form To Manage Marks</h6>
             {!! Qs::getPanelOptions() !!}
         </div>
-
+        
         <div class="card-body">
             @include('pages.support_team.marks.selector')
         </div>

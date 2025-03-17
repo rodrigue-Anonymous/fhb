@@ -2,15 +2,19 @@
 <table style="width:100%; border-collapse:collapse; ">
     <tbody>
     <tr>
-        <td><strong>NAME:</strong> {{ strtoupper($sr->user->name) }}</td>
-        <td><strong>ADM NO:</strong> {{ $sr->adm_no }}</td>
-        <td><strong>HOUSE:</strong> {{ strtoupper($sr->house) }}</td>
-        <td><strong>CLASS:</strong> {{ strtoupper($my_class->name) }}</td>
+        <td><strong>Nom et Prenom:</strong> {{strtoupper($sr->user->name) }}</td>
+        <td><strong>Classe:</strong> {{ strtoupper($class_type->name) }}</td>
+        <td><strong>Option:</strong> {{ strtoupper($my_class->name) }}</td>
+        <td><strong>Filière:</strong> {{ strtoupper($sr->sections) }}</td>
+
+
     </tr>
     <tr>
-        <td><strong>REPORT SHEET FOR</strong> {!! strtoupper(Mk::getSuffix($ex->term)) !!} TERM </td>
-        <td><strong>ACADEMIC YEAR:</strong> {{ $ex->year }}</td>
-        <td><strong>AGE:</strong> {{ $sr->age ?: ($sr->user->dob ? date_diff(date_create($sr->user->dob), date_create('now'))->y : '-') }}</td>
+        <td><strong>Bulletin du </strong> {!! strtoupper(Mk::getSuffix($ex->term)) !!} Trimester </td>
+        <td><strong>Année Académique :</strong> {{ $ex->year }}</td>
+        <td><strong>Numero d'admission :</strong> {{ $sr->adm_no }}</td>
+
+        <!-- <td><strong>AGE:</strong> {{ $sr->age ?: ($sr->user->dob ? date_diff(date_create($sr->user->dob), date_create('now'))->y : '-') }}</td> -->
     </tr>
 
     </tbody>
@@ -54,7 +58,7 @@
                 <td>{{ $mk->t1 ?: '-' }}</td>
                 <td>{{ $mk->t2 ?: '-' }}</td>
                 <td>{{ $mk->tca ?: '-' }}</td>
-                <td>{{ $mk->exm ?: '-' }}</td>
+                <td>{{ $mk->exm ?: '-' }}</td> 
 
                 <td>{{ $mk->$tex ?: '-'}}</td>
                 <td>{{ $mk->grade ? $mk->grade->name : '-' }}</td>

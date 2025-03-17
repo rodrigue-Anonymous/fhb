@@ -14,12 +14,19 @@ class DormsTableSeeder extends Seeder
     public function run()
     {
         DB::table('dorms')->delete();
+        // $data = [
+        //     ['name' => 'Faith Hostel'],
+        //     ['name' => 'Peace Hostel'],
+        //     ['name' => 'Grace Hostel'],
+        //     ['name' => 'Success Hostel'],
+        //     ['name' => 'Trust Hostel'],
+        // ];
         $data = [
-            ['name' => 'Faith Hostel'],
-            ['name' => 'Peace Hostel'],
-            ['name' => 'Grace Hostel'],
-            ['name' => 'Success Hostel'],
-            ['name' => 'Trust Hostel'],
+            ['name' => 'Interne'],
+            ['name' => 'Externe'],
+            // ['name' => 'Grace Hostel'],
+            // ['name' => 'Success Hostel'],
+            // ['name' => 'Trust Hostel'],
         ];
         DB::table('dorms')->insert($data);
     }

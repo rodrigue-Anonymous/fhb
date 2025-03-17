@@ -13,7 +13,18 @@ class StatesTableSeeder extends Seeder
         DB::table('states')->delete();
 
         $states = [
-            'Abia', 'Adamawa', 'Akwa Ibom', 'Anambra', 'Bauchi', 'Bayelsa', 'Benue', 'Borno', 'Cross River', 'Delta', 'Ebonyi', 'Edo', 'Ekiti', 'Enugu', 'FCT', 'Gombe', 'Imo', 'Jigawa','Kaduna', 'Kano', 'Katsina', 'Kebbi', 'Kogi', 'Kwara', 'Lagos', 'Nasarawa', 'Niger', 'Ogun', 'Ondo', 'Osun', 'Oyo', 'Plateau', 'Rivers', 'Sokoto', 'Taraba', 'Yobe', 'Zamfara',
+            'Alibori',
+            'Atacora',
+            'Atlantique',
+            'Borgou',
+            'Collines',
+            'Couffo',
+            'Donga',
+            'Littoral',
+            'Mono',
+            'Ouémé',
+            'Plateau',
+            'Zou',
         ];
 
         foreach ($states as $state) {
@@ -22,3 +33,5 @@ class StatesTableSeeder extends Seeder
     }
 
 }
+
+
